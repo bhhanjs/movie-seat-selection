@@ -53,7 +53,10 @@ export default function SeatingPlus() {
 
       {/* SEATS */}
       <div>
-        <p className="notification"></p>
+        <p className="notification text-black bg-orange-500 w-7/12 mx-auto text-center mb-5">
+          {" "}
+          {isActive ? "Please Select your Seats NOW!" : ""}
+        </p>
         <div className="seatMap">
           <table
             className={`table w-full ${!isActive ? "pointer-events-none" : ""}`}
@@ -793,7 +796,6 @@ export default function SeatingPlus() {
           Screen this way
         </h2>
       </div>
-
     </div>
   );
 }
